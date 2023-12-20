@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+
+  onomatopoeiaList: string[] = [];
+
+  onReceiveNewOnomatopia(newOnomatopia: string) {
+    this.onomatopoeiaList.push(newOnomatopia);
+  }
 }
